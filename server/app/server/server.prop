@@ -10,7 +10,7 @@
     "port"      : 8080,
     "ip"        : "127.0.0.1",
     "remote"    : "http://127.0.0.1:8888",
-    "upload"    : "E:\\Dropbox\\Public\\[FIXME]\\",
+    "upload"    : "FIXME",
     "timeout"   : 4000,
     "proxy"     : "",
     "phantom"   : ""
