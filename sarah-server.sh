@@ -4,7 +4,7 @@
 # Sur une base de script fait par Jérémy HOCDÉ
 
 function sarah_pid() {
-	sarah_pid=$(pgrep -fl "node /home/pi/SARAH-Server-NodeJS/server/app/app.js" | grep -v sudo | awk '{print $1}')
+	sarah_pid=$(pgrep -fl "node ./server/app/app.js" | grep -v sudo | awk '{print $1}')
 }
 
 function sarah_status() {
@@ -19,8 +19,8 @@ function sarah_status() {
 function sarah_start() {
 	sarah_pid
 	if [ -z $sarah_pid ]; then
-		export NODE_PATH=/home/pi/SARAH-Server-NodeJS/server/app/node_modules
-		sudo -E node /home/pi/SARAH-Server-NodeJS/server/app/app.js &
+		export NODE_PATH=./server/app/node_modules
+		sudo -E node ./server/app/app.js &
 	else
 		echo "eRRoR: S.A.R.A.H. is already started"
 	fi

@@ -224,9 +224,6 @@ AFAC/
 server/NodeJS/
 server/app/data/custom.prop*
 server/app/webapp/static/sarah/less/*.css
-plugins/
-
-server/app/node_modules/
-!server/app/node_modules/ejs/*
-!server/app/node_modules/ejs-locals/*
-!server/app/node_modules/i18n/*
+plugins/*
+!plugins
+server/app/node_modules
