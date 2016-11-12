@@ -266,3 +266,33 @@ Manage profiling of current users
 
 - Clean and attach Profile JSON object to request
 - Store latest used profile  
+
+## Getting started
+### Download
+```bash
+> git clone https://github.com/yoanm/SARAH-Server-NodeJS.git
+```
+
+### Install
+```bash
+> cd SARAH-Server-NodeJS
+# install dependencies
+> cd server/app
+> npm install --production
+```
+ 
+### Tweak 
+ * Edit [server/app/server/server.prop](./server/app/server/server.prop) file and set the right value for `upload` property (example `C:\upload`).
+ * (Optionnal) in case you will not run the [S.A.R.A.H client]() in the same machine, edit the `remote` property with the right url.
+ 
+### Launch
+ - Run [Start_Server.cmd](./Start_Server.cmd)
+ - To check if server is running go to http://127.0.0.1:8080/portal. You sould see something like : 
+   ![sarah-login-web-page](https://cloud.githubusercontent.com/assets/4410697/20239668/fd549d1a-a905-11e6-90df-6b087d040b80.png)
+ - use the login/password `admin`/`password`, that's it !
+      
+* If you sarah server does not respond, check the output of [Start_Server.cmd](./Start_Server.cmd). It shoudl look like : 
+   ![sar ah-server-log](https://cloud.githubusercontent.com/assets/4410697/20239741/cbc7f09c-a907-11e6-872d-bb01d8069e7b.png)
+
+### What's next
+Install and start [S.A.R.A.H client](https://github.com/yoanm/SARAH-client.git) !
